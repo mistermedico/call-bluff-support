@@ -50,6 +50,6 @@ The pages automatically choose Hebrew for a Hebrew browser. Add `?lang=en` or `?
 
 ## Release accuracy checklist
 
-The current text describes version 1.0 as free, offline-first, with no ads, analytics, tracking, account, cloud save, or in-app purchase. Before publishing a later app version, update the policy and support answers if any of those facts change. Re-run the validator after every edit.
+The current text distinguishes the live version 1.0 (no ads) from version 1.1 and later, which use Google AdMob while keeping gameplay offline-first. It documents the SDK data and tracking declaration, the lack of a developer account or developer analytics, and the lack of cloud save or in-app purchase. Keep the policy, support answers, App Store privacy answers, and shipped binary aligned. Re-run the validator after every edit.
 
 Do not publish until the product owner has approved the public support address and confirmed that the shipped binary matches these statements.

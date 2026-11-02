@@ -39,12 +39,13 @@
         <p class="eyebrow">Your table, your device</p>
         <h1>Privacy Policy</h1>
         <p class="lede">
-          Call Bluff! is designed to play fully offline and keep game
-          information on your device.
+          Call Bluff! keeps game information on your device and remains fully
+          playable offline. Starting with version 1.1, advertising is loaded
+          only when a network connection and any required consent are available.
         </p>
         <p>
           <strong>Effective date:</strong>
-          <time datetime="2026-10-30">30 October 2026</time>
+          <time datetime="2026-11-02">2 November 2026</time>
         </p>
       </header>
 
@@ -58,11 +59,13 @@
         <p class="eyebrow">השולחן שלך, המכשיר שלך</p>
         <h1>מדיניות פרטיות</h1>
         <p class="lede">
-          שקרן! תוכנן לפעול באופן מלא אופליין ולשמור את פרטי המשחק במכשיר שלך.
+          שקרן! שומר את פרטי המשחק במכשיר ופועל באופן מלא גם אופליין. החל
+          מגרסה 1.1, פרסומות נטענות רק כשיש חיבור לרשת וכאשר התקבלה הסכמה
+          נדרשת, אם היא נדרשת באזור שלך.
         </p>
         <p>
           <strong>תאריך תחילה:</strong>
-          <time datetime="2026-10-30">30 באוקטובר 2026</time>
+          <time datetime="2026-11-02">2 בנובמבר 2026</time>
         </p>
       </header>
 
@@ -71,15 +74,21 @@
           <section aria-labelledby="privacy-summary-en">
             <h2 id="privacy-summary-en">Privacy at a glance</h2>
             <ul class="summary-list">
+              <li><strong>Account or developer analytics:</strong> none.</li>
               <li>
-                <strong>Personal data collected by the app:</strong> none.
+                <strong>Advertising in version 1.1 and later:</strong> Google
+                AdMob may process device, advertising, interaction, diagnostic,
+                performance, IP-address and approximate-location data to deliver,
+                secure and measure ads.
               </li>
-              <li><strong>Tracking or analytics:</strong> none.</li>
+              <li>
+                <strong>Tracking disclosure:</strong> Google's SDK privacy
+                manifest declares Device ID as linked to the user and used for
+                tracking. The developer disables personalized advertising and
+                does not request Apple's App Tracking Transparency permission,
+                but still discloses Google's SDK behavior in the App Store.
+              </li>
               <li><strong>Account or cloud profile:</strong> none.</li>
-              <li>
-                <strong>Advertising or in-app purchases in version 1.0:</strong>
-                none.
-              </li>
               <li>
                 <strong>Game data:</strong> stored locally on your device.
               </li>
@@ -103,17 +112,50 @@
           </section>
 
           <section aria-labelledby="collection-en">
-            <h2 id="collection-en">Data collection, tracking, and services</h2>
+            <h2 id="collection-en">Advertising, data collection, and tracking</h2>
             <p>
-              The current release has no developer-operated server, analytics
-              endpoint, remote database, cloud synchronization, push
-              notifications, advertising SDK, or runtime artificial-intelligence
-              service. It does not track you across apps or websites.
+              Version 1.0 has no advertising SDK. Starting with version 1.1,
+              the app uses the Google Mobile Ads SDK (AdMob) to show occasional
+              interstitial ads between matches. The SDK integration includes
+              rewarded-ad support for future use, but version 1.1 exposes no
+              rewarded-ad offer to players. Ads never interrupt an active match. The
+              game remains playable when ads are unavailable or the device is
+              offline.
             </p>
             <p>
-              Apple processes App Store downloads and related store activity
-              under Apple's own terms and privacy policy. That processing is
-              performed by Apple, not by a Call Bluff! server.
+              Google may automatically process the device's IP address,
+              approximate location derived from it, device or app identifiers,
+              advertising data, ad views and interactions, performance data,
+              and crash or diagnostic information. Google uses this information
+              to deliver and measure ads, prevent fraud and abuse, and maintain
+              its services. The developer does not receive your name, email
+              address, precise location, contacts, photos, or gameplay save from
+              AdMob.
+            </p>
+            <p>
+              The developer configures AdMob for non-personalized advertising,
+              disables the SDK's first-party identifier, and does not request
+              Apple's App Tracking Transparency permission. Google's SDK
+              privacy manifest nevertheless declares Device ID as linked to the
+              user and used for tracking, so the App Store privacy label
+              discloses that behavior. The app uses Google's User Messaging
+              Platform to request consent where legally required and to provide
+              privacy choices. Google's processing is governed by
+              <a href="https://policies.google.com/privacy" rel="external"
+                >Google's Privacy Policy</a
+              > and
+              <a
+                href="https://policies.google.com/technologies/partner-sites"
+                rel="external"
+                >How Google uses information from sites or apps that use its services</a
+              >.
+            </p>
+            <p>
+              There is still no developer-operated game server, account,
+              analytics endpoint, remote database, cloud synchronization, push
+              notification service, or runtime artificial-intelligence service.
+              Apple separately processes App Store downloads and store activity
+              under Apple's own terms and privacy policy.
             </p>
           </section>
 
@@ -134,6 +176,21 @@
               Deleting the app also removes its local data. Because there is no
               account or cloud save, deleted local progress cannot be recovered
               by the developer.
+            </p>
+            <p>
+              Where Google requires a consent or privacy-options message, you
+              can revisit it from <strong>Settings → Privacy → Ad privacy
+              choices</strong>. You may also use your device and Google privacy
+              controls. Choosing not to consent does not block offline gameplay;
+              ads are requested only when the SDK reports that they may be.
+            </p>
+            <p>
+              Deleting local progress or the app does not delete information
+              already processed by Google or Apple. The developer has no game
+              account or advertising-data console tied to your identity and
+              therefore cannot retrieve or delete that provider data for you.
+              Provider retention, access and deletion requests are handled under
+              the providers' privacy policies and privacy controls.
             </p>
           </section>
 
@@ -161,11 +218,9 @@
           <section aria-labelledby="changes-en">
             <h2 id="changes-en">Changes to this policy</h2>
             <p>
-              A future release may add optional purchases or another service
-              only after this policy and the App Store privacy disclosures are
-              updated to describe it accurately. Policy changes will carry a new
-              effective date; material changes may also be shown in the app or
-              release notes.
+              We may update this policy when the app or its service providers
+              change. Policy changes will carry a new effective date; material
+              changes may also be shown in the app or release notes.
             </p>
           </section>
 
@@ -205,13 +260,19 @@
           <section aria-labelledby="privacy-summary-he">
             <h2 id="privacy-summary-he">הפרטיות בקצרה</h2>
             <ul class="summary-list">
-              <li><strong>מידע אישי שהאפליקציה אוספת:</strong> אין.</li>
-              <li><strong>מעקב או אנליטיקה:</strong> אין.</li>
-              <li><strong>חשבון או פרופיל בענן:</strong> אין.</li>
+              <li><strong>חשבון או אנליטיקה של המפתח:</strong> אין.</li>
               <li>
-                <strong>פרסומות או רכישות בתוך האפליקציה בגרסה 1.0:</strong>
-                אין.
+                <strong>פרסום בגרסה 1.1 ואילך:</strong> Google AdMob עשויה לעבד
+                נתוני מכשיר, פרסום, אינטראקציה, אבחון, ביצועים, כתובת IP ומיקום
+                משוער לצורך הצגה, אבטחה ומדידה של פרסומות.
               </li>
+              <li>
+                <strong>הצהרת מעקב:</strong> מניפסט הפרטיות של ה־SDK של Google
+                מצהיר שמזהה מכשיר מקושר למשתמש ומשמש למעקב. המפתח משבית פרסום
+                מותאם אישית ואינו מבקש הרשאת שקיפות מעקב של Apple, אך עדיין
+                מצהיר על התנהגות ה־SDK ב־App Store.
+              </li>
+              <li><strong>חשבון או פרופיל בענן:</strong> אין.</li>
               <li><strong>נתוני המשחק:</strong> נשמרים מקומית במכשיר.</li>
             </ul>
           </section>
@@ -231,16 +292,44 @@
           </section>
 
           <section aria-labelledby="collection-he">
-            <h2 id="collection-he">איסוף מידע, מעקב ושירותים</h2>
+            <h2 id="collection-he">פרסום, איסוף מידע ומעקב</h2>
             <p>
-              בגרסה הנוכחית אין שרת שמפעיל המפתח, נקודת קצה לאנליטיקה, מסד
-              נתונים מרוחק, סנכרון ענן, הודעות Push, SDK לפרסום או שירות בינה
-              מלאכותית בזמן ריצה. האפליקציה אינה עוקבת אחריך בין אפליקציות או
-              אתרים.
+              גרסה 1.0 אינה כוללת SDK לפרסום. החל מגרסה 1.1 האפליקציה משתמשת
+              ב־Google Mobile Ads SDK ‏(AdMob) להצגה מזדמנת של פרסומות מעבר בין
+              משחקים. שילוב ה־SDK כולל תמיכה עתידית בפרסומות מתוגמלות, אך גרסה
+              1.1 אינה מציגה לשחקנים הצעה כזו. פרסומות אינן קוטעות משחק פעיל.
+              המשחק ממשיך לפעול כאשר אין פרסומות זמינות
+              או כשהמכשיר אינו מחובר לרשת.
             </p>
             <p>
-              Apple מעבדת הורדות מה־App Store ופעילות נלווית בחנות לפי התנאים
-              ומדיניות הפרטיות שלה. העיבוד נעשה בידי Apple ולא בשרת של שקרן!.
+              Google עשויה לעבד באופן אוטומטי את כתובת ה־IP של המכשיר, מיקום
+              משוער הנגזר ממנה, מזהי מכשיר או אפליקציה, נתוני פרסום, צפיות
+              ואינטראקציות עם פרסומות, נתוני ביצועים ומידע על קריסות או אבחון.
+              המידע משמש להצגה ולמדידה של פרסומות, למניעת הונאה ושימוש לרעה
+              ולתחזוקת השירותים. המפתח אינו מקבל מ־AdMob את שמך, כתובת הדוא״ל,
+              המיקום המדויק, אנשי הקשר, התמונות או שמירת המשחק שלך.
+            </p>
+            <p>
+              המפתח מגדיר ב־AdMob פרסום שאינו מותאם אישית, משבית את המזהה
+              מהצד הראשון של ה־SDK ואינו מבקש את הרשאת שקיפות המעקב של Apple.
+              עם זאת, מניפסט הפרטיות של ה־SDK של Google מצהיר שמזהה מכשיר
+              מקושר למשתמש ומשמש למעקב, ולכן תווית הפרטיות ב־App Store מגלה
+              התנהגות זו. האפליקציה משתמשת ב־User Messaging Platform של Google
+              כדי לבקש הסכמה במקומות שבהם הדין דורש זאת ולאפשר בחירות פרטיות.
+              העיבוד של Google כפוף ל־<a href="https://policies.google.com/privacy?hl=iw" rel="external"
+                >מדיניות הפרטיות של Google</a
+              > ולדף
+              <a
+                href="https://policies.google.com/technologies/partner-sites?hl=iw"
+                rel="external"
+                >כיצד Google משתמשת במידע מאתרים או מאפליקציות שמשתמשים בשירותיה</a
+              >.
+            </p>
+            <p>
+              עדיין אין שרת משחק שמפעיל המפתח, חשבון, נקודת קצה לאנליטיקה,
+              מסד נתונים מרוחק, סנכרון ענן, הודעות Push או שירות בינה מלאכותית
+              בזמן ריצה. Apple מעבדת בנפרד הורדות ופעילות בחנות לפי התנאים
+              ומדיניות הפרטיות שלה.
             </p>
           </section>
 
@@ -260,6 +349,20 @@
               <strong>הגדרות ← פרטיות ← מחיקת כל ההתקדמות המקומית</strong>. גם
               מחיקת האפליקציה מסירה את הנתונים המקומיים. מאחר שאין חשבון או
               שמירה בענן, המפתח אינו יכול לשחזר התקדמות מקומית שנמחקה.
+            </p>
+            <p>
+              כאשר Google דורשת הודעת הסכמה או אפשרויות פרטיות, אפשר לפתוח
+              אותה שוב דרך <strong>הגדרות ← פרטיות ← אפשרויות פרטיות לפרסום</strong>.
+              אפשר להשתמש גם בבקרות הפרטיות של המכשיר ושל Google. בחירה שלא
+              להסכים אינה חוסמת משחק אופליין; האפליקציה מבקשת פרסומות רק כאשר
+              ה־SDK מדווח שמותר לעשות זאת.
+            </p>
+            <p>
+              מחיקת ההתקדמות המקומית או האפליקציה אינה מוחקת מידע שכבר עובד
+              בידי Google או Apple. למפתח אין חשבון משחק או מסוף נתוני פרסום
+              שמקושר לזהות שלך, ולכן הוא אינו יכול לאחזר או למחוק עבורך את נתוני
+              הספקים. תקופות שמירה ובקשות גישה או מחיקה מטופלות לפי מדיניות
+              הפרטיות ובקרות הפרטיות של הספקים.
             </p>
           </section>
 
@@ -284,10 +387,9 @@
           <section aria-labelledby="changes-he">
             <h2 id="changes-he">שינויים במדיניות</h2>
             <p>
-              שירות עתידי או רכישות אופציונליות יתווספו רק לאחר עדכון מדיניות זו
-              והצהרות הפרטיות ב־App Store כך שיתארו אותם במדויק. לכל שינוי יהיה
-              תאריך תחילה חדש; שינוי מהותי עשוי להופיע גם באפליקציה או בהערות
-              הגרסה.
+              אנו עשויים לעדכן מדיניות זו כאשר האפליקציה או ספקי השירות שלה
+              משתנים. לכל שינוי יהיה תאריך תחילה חדש; שינוי מהותי עשוי להופיע
+              גם באפליקציה או בהערות הגרסה.
             </p>
           </section>
 
